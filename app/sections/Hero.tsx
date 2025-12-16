@@ -3,8 +3,8 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div className="w-full flex flex-col items-center">
-      <div className="flex flex-col items-center text-center">
+    <div className="w-full flex flex-col items-center h-[100vh]">
+      <div className="flex flex-col items-center text-center mt-10">
         <Image
           src={"/images/heroImage.png"}
           alt="Hero Image"
