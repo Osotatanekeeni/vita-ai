@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, DM_Sans, Charm } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -10,6 +11,31 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const tabular = localFont({
+  src: [
+    {
+      path: "../public/fonts/Tabular-Variable.ttf",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Tabular-VariableItalic.ttf",
+      style: "italic",
+    },
+  ],
+  variable: "--font-tabular",
+});
+
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
+  subsets: ["latin"],
+});
+
+const charm = Charm({
+  variable: "--font-charm",
+  subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -25,7 +51,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${tabular.variable} ${dmSans.variable} ${charm.variable} antialiased`}
       >
         {children}
       </body>
