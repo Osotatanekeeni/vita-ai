@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, DM_Sans, Charm } from "next/font/google";
+import { Geist, Geist_Mono, DM_Sans } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -32,10 +32,36 @@ const dmSans = DM_Sans({
   subsets: ["latin"],
 });
 
-const charm = Charm({
+const charm = localFont({
+  src: [
+    {
+      path: "../public/fonts/Charm-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Charm-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
   variable: "--font-charm",
-  subsets: ["latin"],
-  weight: ["400", "700"],
+});
+
+const notoSerifGeorgian = localFont({
+  src: [
+    {
+      path: "../public/fonts/NotoSerifGeorgian-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/NotoSerifGeorgian-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-noto-serif-georgian",
 });
 
 export const metadata: Metadata = {
@@ -51,7 +77,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${tabular.variable} ${dmSans.variable} ${charm.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${tabular.variable} ${dmSans.variable} ${charm.variable} ${notoSerifGeorgian.variable} antialiased`}
       >
         {children}
       </body>

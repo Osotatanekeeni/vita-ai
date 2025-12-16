@@ -13,6 +13,7 @@
   --font-tabular: var(--font-tabular);
   --font-dm-sans: var(--font-dm-sans);
   --font-charm: var(--font-charm);
+  --font-noto-serif-georgian: var(--font-noto-serif-georgian);
 }
 
 /* @media (prefers-color-scheme: dark) {
