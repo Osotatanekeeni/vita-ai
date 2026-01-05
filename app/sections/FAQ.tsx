@@ -33,7 +33,7 @@ export default function FAQ() {
   };
 
   return (
-    <div className="w-full flex flex-col items-center py-20 px-4 bg-[#F8F9FA]">
+    <div id="faq" className="w-full flex flex-col items-center py-20 px-4 bg-[#F8F9FA]">
       <div className="max-w-4xl w-full">
         {/* Heading */}
         <h2 className="text-center mb-12">

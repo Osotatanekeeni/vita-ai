@@ -19,19 +19,21 @@ export default function Navbar() {
           onMouseEnter={() => setIsMenuOpen(true)}
           onMouseLeave={() => setIsMenuOpen(false)}
         >
-          {/* Hamburger Menu */}
-          <button
-            className="flex items-center justify-center"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Menu"
-          >
-            <div className="flex flex-col gap-1.5">
-              <span className="block w-6 h-0.5 bg-gray-900 rounded-full"></span>
-              <span className="block w-6 h-0.5 bg-gray-900 rounded-full"></span>
-              <span className="block w-6 h-0.5 bg-gray-900 rounded-full"></span>
-              <span className="block w-6 h-0.5 bg-gray-900 rounded-full"></span>
-            </div>
-          </button>
+          {/* Hamburger Menu - Hide when menu is open */}
+          {!isMenuOpen && (
+            <button
+              className="flex items-center justify-center"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Menu"
+            >
+              <div className="flex flex-col gap-1.5">
+                <span className="block w-6 h-0.5 bg-gray-900 rounded-full"></span>
+                <span className="block w-6 h-0.5 bg-gray-900 rounded-full"></span>
+                <span className="block w-6 h-0.5 bg-gray-900 rounded-full"></span>
+                <span className="block w-6 h-0.5 bg-gray-900 rounded-full"></span>
+              </div>
+            </button>
+          )}
           
           {/* Menu Links - Expand on Hover */}
           <div className={`flex items-center gap-6 overflow-hidden transition-all duration-700 ease-in-out ${

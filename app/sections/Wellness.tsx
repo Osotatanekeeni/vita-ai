@@ -39,7 +39,7 @@ export default function Wellness() {
   }, []);
 
   return (
-    <div className="w-full flex flex-col items-center h-[100vh] bg-[#F8F9FA]">
+    <div id="features" className="w-full flex flex-col items-center h-[100vh] bg-[#F8F9FA]">
       <div>
         <p className="font-[family-name:var(--font-noto-serif-georgian)] text-5xl text-center">
           Your Daily Wellness,

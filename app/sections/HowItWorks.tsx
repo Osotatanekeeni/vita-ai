@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function HowItWorks() {
   return (
-    <div className="w-full flex flex-col items-left h-[100vh] px-50 bg-[#F8F9FA]">
+    <div id="how-it-works" className="w-full flex flex-col items-left h-[100vh] px-50 bg-[#F8F9FA]">
         <div className=' flex flex-row justify-between gap-6'>
             <div className='w-[40%]'>
                 <p className="text-left flex flex-col gap-4 font-[family-name:var(--font-noto-serif-georgian)] text-5xl text-center">We Make Your Health <span className="font-[family-name:var(--font-charm)] text-[#2D7967] text-5xl text-left font-bold mt-2">Easier To Understand</span></p>
