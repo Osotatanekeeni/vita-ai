@@ -3,8 +3,8 @@ import React from 'react'
 
 export default function Section2() {
   return (
-    <div className="w-full flex flex-col items-center min-h-[50%] py-12 md:py-16 lg:py-20 px-4 md:px-8 bg-[#F8F9FA]">
-        <div className='w-full max-w-6xl'>
+    <div className="w-full flex flex-col items-center min-h-[50%] py-12 md:py-16 lg:py-20 bg-[#F8F9FA]">
+        <div className='w-full'>
           <div className="mb-6 md:mb-8 lg:mb-10">
         <div>
           <p className="font-[family-name:var(--font-noto-serif-georgian)] text-2xl md:text-4xl lg:text-5xl text-center px-2">
