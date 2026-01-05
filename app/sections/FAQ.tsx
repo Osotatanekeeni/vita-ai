@@ -33,8 +33,8 @@ export default function FAQ() {
   };
 
   return (
-    <div className="w-full flex flex-col items-center py-20 px-4 bg-[#F8F9FA] h-[100vh]">
-      <div className="max-w-4xl w-full h-[100vh]">
+    <div className="w-full flex flex-col items-center py-20 px-4 bg-[#F8F9FA]">
+      <div className="max-w-4xl w-full">
         {/* Heading */}
         <h2 className="text-center mb-12">
           <span className="font-[family-name:var(--font-noto-serif-georgian)] text-5xl">

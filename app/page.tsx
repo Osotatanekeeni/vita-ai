@@ -7,6 +7,7 @@ import HowItWorks from "./sections/HowItWorks";
 import Testimonials from "./sections/Testimonials";
 import FAQ from "./sections/FAQ";
 import Footer from "./sections/Footer";
+import CTA from "./sections/CTA";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <HowItWorks />
       <Testimonials />
       <FAQ />
+      <CTA />
       <Footer />
     </>
   );
