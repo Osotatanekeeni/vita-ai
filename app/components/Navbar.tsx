@@ -15,7 +15,7 @@ export default function Navbar() {
 
         {/* Right side - Combined Menu and CTA */}
         <div 
-          className="flex items-center bg-gray-100 rounded-full px-6 py-3 gap-6 transition-all duration-400 ease-in-out"
+          className="flex items-center bg-gray-100 rounded-full px-6 py-3 gap-6 transition-all duration-700 ease-in-out"
           onMouseEnter={() => setIsMenuOpen(true)}
           onMouseLeave={() => setIsMenuOpen(false)}
         >
@@ -34,7 +34,7 @@ export default function Navbar() {
           </button>
           
           {/* Menu Links - Expand on Hover */}
-          <div className={`flex items-center gap-6 overflow-hidden transition-all duration-300 ${
+          <div className={`flex items-center gap-6 overflow-hidden transition-all duration-700 ease-in-out ${
             isMenuOpen ? 'max-w-[500px] opacity-100' : 'max-w-0 opacity-0'
           }`}>
             <a
