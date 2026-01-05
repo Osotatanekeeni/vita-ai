@@ -39,75 +39,70 @@ export default function Wellness() {
   }, []);
 
   return (
-    <div id="features" className="w-full flex flex-col items-center h-[100vh] bg-[#F8F9FA]">
+    <div id="features" className="w-full flex flex-col items-center min-h-screen py-12 md:py-16 lg:py-20 px-4 md:px-8 bg-[#F8F9FA]">
       <div>
-        <p className="font-[family-name:var(--font-noto-serif-georgian)] text-5xl text-center">
+        <p className="font-[family-name:var(--font-noto-serif-georgian)] text-3xl md:text-4xl lg:text-5xl text-center">
           Your Daily Wellness,
         </p>
-        <p className="font-[family-name:var(--font-charm)] text-[#2D7967] text-5xl text-center font-bold mt-2">
+        <p className="font-[family-name:var(--font-charm)] text-[#2D7967] text-3xl md:text-4xl lg:text-5xl text-center font-bold mt-2">
           Explained Clearly
         </p>
       </div>
 
-      <div className=" flex items-end justify-end gap-20 mt-8">
+      <div className="flex flex-col md:flex-row items-end justify-center gap-6 md:gap-10 lg:gap-20 mt-6 md:mt-8 w-full max-w-6xl">
         {/* Health Tracking - with transition (4 images) */}
-        <div className="relative w-auto h-[320px]">
+        <div className="relative w-full md:w-auto h-[250px] md:h-[280px] lg:h-[320px]">
           <Image
             src={healthTracking[healthTrackingIndex]}
             alt="Health Tracking"
             width={1440}
             height={600}
-            className="w-auto h-[320px] border-2 transition-opacity duration-300 ease-in-out"
+            className="w-full md:w-auto h-[250px] md:h-[280px] lg:h-[320px] border-2 transition-opacity duration-300 ease-in-out object-cover md:object-contain"
             key={`health-${healthTrackingIndex}`}
           />
         </div>
 
-        <div className="flex items-end justify-end gap-10 mt-8">
+        <div className="flex flex-col md:flex-row items-end justify-center gap-6 md:gap-6 lg:gap-10 w-full md:w-auto">
           {/* Personalized Insights - with transition (3 images) */}
-          <div className="relative w-auto h-[320px]">
+          <div className="relative w-full md:w-auto h-[250px] md:h-[280px] lg:h-[320px]">
             <Image
               src={personalizedInsights[insightsIndex]}
               alt="Personalized Insights"
               width={1440}
               height={600}
-              className="w-auto h-[320px] border-2 transition-opacity duration-300 ease-in-out"
+              className="w-full md:w-auto h-[250px] md:h-[280px] lg:h-[320px] border-2 transition-opacity duration-300 ease-in-out object-cover md:object-contain"
               key={`insights-${insightsIndex}`}
             />
           </div>
 
           {/* Smart Recommendations - with transition (3 images) */}
-          <div className="relative w-auto h-[350px]">
+          <div className="relative w-full md:w-auto h-[280px] md:h-[310px] lg:h-[350px]">
             <Image
               src={smartRecommendations[recommendationsIndex]}
               alt="Smart Recommendations"
               width={1440}
               height={600}
-              className="w-auto h-[350px] border-2 transition-opacity duration-300 ease-in-out"
+              className="w-full md:w-auto h-[280px] md:h-[310px] lg:h-[350px] border-2 transition-opacity duration-300 ease-in-out object-cover md:object-contain"
               key={`smart-${recommendationsIndex}`}
             />
           </div>
         </div>
       </div>
 
-      <div className="text-left flex flex-col gap-4 mt-10">
-        <p className="font-[family-name:var(--font-satoshi)] text-left text-2xl">
+      <div className="text-left flex flex-col gap-3 md:gap-4 mt-8 md:mt-10 px-4 md:px-0 max-w-4xl">
+        <p className="font-[family-name:var(--font-satoshi)] text-left text-base md:text-lg lg:text-2xl">
           Your <span className="font-bold">health companion</span> runs quietly in the background,
-          <br />
-          observing your daily rhythm, sleep patterns, hydration
-          <br />
-          levels, and activity trends.
+          {" "}observing your daily rhythm, sleep patterns, hydration
+          {" "}levels, and activity trends.
         </p>
-        <p className="font-[family-name:var(--font-satoshi)] text-left text-2xl">
+        <p className="font-[family-name:var(--font-satoshi)] text-left text-base md:text-lg lg:text-2xl">
           It builds a <span className="font-bold">unique wellness</span> profile for you, then highlights
-          <br />
-          what&apos;s changing in real time.
+          {" "}what&apos;s changing in real time.
         </p>
-        <p className="font-[family-name:var(--font-satoshi)] text-left text-2xl">
+        <p className="font-[family-name:var(--font-satoshi)] text-left text-base md:text-lg lg:text-2xl">
           Whether it&apos;s low energy, poor recovery, or a pattern you
-          <br />
-          missed, the system translates it into <span className="font-bold">simple insights</span> you can
-          <br />
-          act on immediately.
+          {" "}missed, the system translates it into <span className="font-bold">simple insights</span> you can
+          {" "}act on immediately.
         </p>
       </div>
     </div>
