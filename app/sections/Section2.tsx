@@ -17,7 +17,7 @@ export default function Section2() {
       </div>
 
       <div className="w-full">
-        <Image src={"/images/section2Image.png"} alt="Section2 Image" width={1440} height={600} className="w-full h-auto" />
+        <Image src={"/images/Section2Image.png"} alt="Section2 Image" width={1440} height={600} className="w-full h-auto" />
       </div>
         </div>
     </div>
