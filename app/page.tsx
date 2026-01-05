@@ -5,6 +5,7 @@ import Section2 from "./sections/Section2";
 import Wellness from "./sections/Wellness";
 import HowItWorks from "./sections/HowItWorks";
 import Testimonials from "./sections/Testimonials";
+import FAQ from "./sections/FAQ";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Wellness />
       <HowItWorks />
       <Testimonials />
+      <FAQ />
     </>
   );
 }
