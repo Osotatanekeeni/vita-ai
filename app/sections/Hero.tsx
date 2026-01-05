@@ -3,8 +3,9 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div className="w-full flex flex-col items-center h-[100vh]">
-      <div className="flex flex-col items-center text-center mt-10">
+    <div className="w-full flex flex-col items-center h-[100vh] px-20 bg-[#F8F9FA]">
+      <div className="flex flex-col items-center text-center h-[100vh] w-full bg-white rounded-bl-4xl rounded-br-4xl">
+        <div className="flex flex-col items-center text-center mt-10">
         <Image
           src={"/images/heroImage.png"}
           alt="Hero Image"
@@ -52,6 +53,7 @@ export default function Hero() {
         <button className="font-[family-name:var(--font-dm-sans)] border border-black px-4 py-2 rounded-full ml-4">
             Learn How It Works
         </button>
+      </div>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function HowItWorks() {
   return (
-    <div className="w-full flex flex-col items-left h-[100vh] px-50">
+    <div className="w-full flex flex-col items-left h-[100vh] px-50 bg-[#F8F9FA]">
         <div className=' flex flex-row justify-between gap-6'>
             <div className='w-[40%]'>
                 <p className="text-left flex flex-col gap-4 font-[family-name:var(--font-noto-serif-georgian)] text-5xl text-center">We Make Your Health <span className="font-[family-name:var(--font-charm)] text-[#2D7967] text-5xl text-left font-bold mt-2">Easier To Understand</span></p>
@@ -13,7 +13,7 @@ export default function HowItWorks() {
                 <p className="font-[family-name:var(--font-satoshi)] text-left text-2xl">From sleep to hydration to energy shifts, our companion observes what matters and turns it into clear, gentle guidance you act on every day.</p>
             </div>
         </div>
-        <div className='border-b-1 w-[45%] mt-10 mb-6'>
+        <div className='border-b-1 w-[45%] mt-10 mb-20 mb-6'>
             <p className='font-[family-name:var(--font-satoshi)] text-2xl'>How It Works</p>
         </div>
 

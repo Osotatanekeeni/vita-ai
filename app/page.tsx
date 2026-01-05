@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Section2 from "./sections/Section2";
 import Wellness from "./sections/Wellness";
 import HowItWorks from "./sections/HowItWorks";
+import Testimonials from "./sections/Testimonials";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Section2 />
       <Wellness />
       <HowItWorks />
+      <Testimonials />
     </>
   );
 }
