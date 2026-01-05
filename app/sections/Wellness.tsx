@@ -49,7 +49,7 @@ export default function Wellness() {
         </p>
       </div>
 
-      <div className="flex flex-col md:flex-row items-end justify-center gap-6 md:gap-10 lg:gap-20 mt-6 md:mt-8 w-full max-w-6xl">
+      <div className="flex flex-col md:flex-row items-end justify-center gap-6 md:gap-10 lg:gap-20 mt-6 md:mt-8 w-full">
         {/* Health Tracking - with transition (4 images) */}
         <div className="relative w-full md:w-auto h-[250px] md:h-[280px] lg:h-[320px]">
           <Image
