@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Section2() {
   return (
-    <div className="w-full flex flex-col items-center min-h-screen py-12 md:py-16 lg:py-20 px-4 md:px-8 bg-[#F8F9FA]">
+    <div className="w-full flex flex-col items-center min-h-[50%] py-12 md:py-16 lg:py-20 px-4 md:px-8 bg-[#F8F9FA]">
         <div className='w-full max-w-6xl'>
           <div className="mb-6 md:mb-8 lg:mb-10">
         <div>
