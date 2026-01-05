@@ -43,10 +43,10 @@ export default function Testimonials() {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <div className="w-full flex flex-col items-center h-[100vh] bg-[#F8F9FA]">
-      <div className="mt-20 h-[100vh] flex items-center w-[80%]">
+    <div className="w-full flex flex-col items-center min-h-screen py-12 md:py-16 lg:py-20 bg-[#F8F9FA]">
+      <div className="flex items-center w-full px-4 md:w-[90%] lg:w-[80%]">
         <div
-          className="flex flex-col items-center text-center p-4 bg-white gap-4 rounded-2xl px-40 p-10 transition-opacity duration-300 ease-in-out"
+          className="flex flex-col items-center text-center bg-white gap-4 md:gap-6 rounded-2xl px-6 py-8 md:px-16 md:py-10 lg:px-40 lg:p-10 transition-opacity duration-300 ease-in-out w-full"
           key={currentIndex}
         >
           <Image
@@ -54,14 +54,14 @@ export default function Testimonials() {
             alt={currentTestimonial.name}
             width={1440}
             height={1440}
-            className="w-24 h-24 rounded-full mb-4"
+            className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full mb-2 md:mb-4"
           />
-          <p className="mt-2 text-4xl font-[family-name:var(--font-satoshi)] leading-normal text-[#495057]">
+          <p className="mt-2 text-lg md:text-2xl lg:text-4xl font-[family-name:var(--font-satoshi)] leading-relaxed md:leading-normal text-[#495057]">
             {"\""}{currentTestimonial.feedback}{"\""}
           </p>
-          <div className="mt-8">
-            <h3 className="font-semibold text-[#919191]">{currentTestimonial.name}</h3>
-            <p className="text-sm text-gray-500 text-[#919191]">{currentTestimonial.role.toUpperCase()}</p>
+          <div className="mt-4 md:mt-6 lg:mt-8">
+            <h3 className="font-semibold text-sm md:text-base text-[#919191]">{currentTestimonial.name}</h3>
+            <p className="text-xs md:text-sm text-gray-500 text-[#919191]">{currentTestimonial.role.toUpperCase()}</p>
           </div>
         </div>
       </div>
